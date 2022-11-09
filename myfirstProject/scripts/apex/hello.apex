@@ -1,0 +1,5 @@
+
+MyContactController.createContacts();
+
+MyContactController.deleteAllContacts();
+

@@ -1,0 +1,16 @@
+<template>
+
+    <div class="container">
+      <lightning-input label="enter n01"  name="number1" onchange={handleChange}></lightning-input>
+      <lightning-input label="enter n02"  name="number2" onchange={handleChange}></lightning-input>
+      <div class="btns"> 
+         <lightning-button label="+"   onclick={doAdd} ></lightning-button>
+        <lightning-button label="-"   onclick={doSub} ></lightning-button>
+        <lightning-button label="*"   onclick={doMult} ></lightning-button>
+        <lightning-button label="/"   onclick={doDiv} ></lightning-button>
+    </div>
+     
+      result is : {result}
+    </div>
+
+</template>

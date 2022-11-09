@@ -1,0 +1,24 @@
+<template>   
+    <lightning-card title="My Contacts Manager" icon-name="custom:custom63">     
+        <lightning-input  class="inputOne" onclick={handler} type="number" label="Nbr of contacts to create"  min="1" max="50" slot="actions"  value=3  ></lightning-input>
+        <lightning-button label="create contacts" onclick={createContactsHandler}  slot="actions" variant="brand Outline"></lightning-button>
+        <lightning-button label="delete all contacts" onclick={deleteContactsHandler} slot="actions"  variant="destructive-text"></lightning-button>
+       
+        <div class="slds-m-around_medium"  >           
+            <template if:true={contList.data}>                   
+             <lightning-card  title="My Contacts"  icon-name="custom:custom62">
+                <h1 class="slds-text-align_center slds-text-heading_small " style="color:rgb(179, 121, 35) ;"> Nbr Of contacts: {contNbr.data} </h1> 
+                   <lightning-datatable 
+                      data={contList.data}
+                      columns={columns}
+                      key-field="id" 
+                    >
+                   </lightning-datatable>
+             </lightning-card>                
+            </template>
+            <template if:true={contList.error}>
+                <h1> error : {contList.error}</h1>                
+            </template>
+        </div>
+    </lightning-card>   
+</template>

@@ -1,0 +1,13 @@
+.btns{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.container{
+    background-color: rgb(61, 153, 180);
+    border-radius: 10%;
+    padding: 2rem;
+    height: 300px;
+    width: 250px;
+}

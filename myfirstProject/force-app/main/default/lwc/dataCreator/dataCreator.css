@@ -1,0 +1,14 @@
+
+.container{
+    display: flex;
+    flex-direction: column;
+ 
+    background-color:#715c83;
+    /* height: 300px;
+    width: 400px; */
+    border-radius: 15px;
+}
+
+lightning-button{
+    padding: 1rem;
+}
